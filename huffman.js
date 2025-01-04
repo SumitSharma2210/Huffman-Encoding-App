@@ -135,7 +135,7 @@ class HuffmanCoder {
     let final_res =
       this.stringify(huffman_encoder) + "\n" + rem + "\n" + result;
     let info = "Compression Ratio : " + data.length / final_res.length;
-    info = "Compression complete " + "\n" + info;
+    info = "Compression complete and file sent for download" + "\n" + info;
     //encoded tree in string+rem+encoded text,tree structure(b<=1=>a),comp ratio
     return [final_res, this.display(huffman_encoder, false), info];
     //values returned to script.js
@@ -189,7 +189,7 @@ class HuffmanCoder {
         node = huffman_decoder; //get back to root node traverse again
       }
     }
-    let info = "Decompression complete";
+    let info = "Decompression complete and file sent for download";
     return [res, this.display(huffman_decoder, true), info];
   }
 }
