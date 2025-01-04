@@ -1,0 +1,90 @@
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents unnecessary scrollbars */
+}
+
+p {
+  font-family: "Cursive", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#container {
+  width: 100%;
+  height: 80vh; /* 80% of the viewport height */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: auto; /* Allows scrolling when content overflows */
+  scroll-behavior: smooth; /* Smooth scrolling for better user experience */
+}
+
+/* Text Box Styles */
+.text_box {
+  padding: 30px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Prevents padding from adding to width/height */
+}
+
+.text_box h2 {
+  color: #005792;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Button Centering */
+.center_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds consistent spacing between buttons */
+  margin-top: 20px; /* Adds spacing above the button group */
+}
+
+.center_buttons button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  margin: 10px; /* Ensures some space around individual buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.center_buttons button:hover {
+  background-color: #0056b3;
+}
+
+.h1 {
+  font-size: large;
+}
